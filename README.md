@@ -1,16 +1,28 @@
 # resume_app
 
-A new Flutter project.
+#  Resume Builder
 
-## Getting Started
+<h1 align="center"> 1.Resume Builder </h1>
 
-This project is a starting point for a Flutter application.
+<h1 align="left"></h1>
 
-A few resources to get you started if this is your first Flutter project:
+<div align ="center">
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+  <img src = "https://github.com/Nikks27/resume_app/assets/148762716/cb663ee1-6c76-47da-a51c-4e336e33e8e1" height ="550">
+   <img src = "https://github.com/Nikks27/resume_app/assets/148762716/6ebb9414-cb98-4005-b098-45cad23b2806" height ="550">
+    <img src = "https://github.com/Nikks27/resume_app/assets/148762716/240215bc-f485-4b15-8c3c-5eead0cf1186" height ="550">
+     <img src = "https://github.com/Nikks27/resume_app/assets/148762716/cfb46add-5583-4d38-90e4-e8ed967158d9" height ="550">
+      <img src = "https://github.com/Nikks27/resume_app/assets/148762716/2c12f293-d648-441a-adbf-ee762d6216f3" height ="550">
+       <img src = "https://github.com/Nikks27/resume_app/assets/148762716/e31748e7-a1e9-4865-8883-d857ce052958" height ="550">
+        <img src = "" height ="550">
+         <img src = "" height ="550">
+          <img src = "" height ="550">
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
+
+
+          
+   
+</div>
