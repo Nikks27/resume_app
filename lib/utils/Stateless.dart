@@ -30,7 +30,7 @@ class Resume extends StatelessWidget {
         '/contact' : (context) => Contact(),
         '/hobbies' : (context) => hobbies(),
         '/languages' : (context) => languages(),
-        '/pdf' : (context) => Pdf(),
+         '/pdf' : (context) => PdfOfCv(),
       },
     );
   }
