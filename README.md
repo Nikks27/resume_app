@@ -17,6 +17,11 @@
         <img src = "https://github.com/Nikks27/resume_app/assets/148762716/9135188f-a7de-4639-b6fc-bfeae20cc69e" height ="550">
          <img src = "https://github.com/Nikks27/resume_app/assets/148762716/22a2c5f3-0e4e-44d6-99a5-45ad5b030cf5" height ="550">
           <img src = "https://github.com/Nikks27/resume_app/assets/148762716/eb430bfa-dd93-4b81-b6de-7235089bca9f" height ="550">
+            <img src = "https://github.com/Nikks27/resume_app/assets/148762716/a0803bc9-0c8c-4f35-984d-35e708610f60" height ="550">
+
+
+
+https://github.com/Nikks27/resume_app/assets/148762716/431a32eb-9c5d-478b-b95e-a54eb1428db9
 
 
 
