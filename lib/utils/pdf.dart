@@ -8,6 +8,9 @@ import 'package:pdf/widgets.dart' as pw;
 import 'package:resume_app/utils/Education.dart';
 
 import 'Contact.dart';
+import 'Experience.dart';
+import 'Hobbies.dart';
+import 'Languages.dart';
 import 'ParsonDetails.dart';
 import 'Skills.dart';
 
@@ -35,22 +38,25 @@ final image = pw.MemoryImage(
  pdf.addPage(
      pw.Page(
        pageFormat: PdfPageFormat.a4,
-       build: (context) => pw.Column(
+       build: (context) => pw.Row(
+         mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
          children: [
            pw.Text(Institude!),
   pw.Container(
   height: 700,
   width: 170,
   decoration: pw.BoxDecoration(
-    color: PdfColors.blue,
+    color: PdfColors.blue300,
   ),
     child: pw.Column(
+      crossAxisAlignment: pw.CrossAxisAlignment.start,
       children: [
         pw.Container(
-          margin: pw.EdgeInsets.only(top: 20),
+          margin: pw.EdgeInsets.only(top: 20,left: 25 ),
           height:120,
           width: 120,
          decoration:  pw.BoxDecoration(
+           shape: pw.BoxShape.circle,
             color: PdfColors.white,
            image: pw.DecorationImage(
              fit: pw.BoxFit.cover,
@@ -58,18 +64,17 @@ final image = pw.MemoryImage(
            ),
           ),
         ),
-        pw.SizedBox(height: 10),
-        pw.Text(" imformation ",style: pw.TextStyle(  fontWeight: pw.FontWeight.bold,fontSize: 20)   ),
-        pw.Text(" $name ",style: pw.TextStyle( fontSize: 20)   ),
-        pw.Text(" $birthday ",style: pw.TextStyle(  fontSize: 20)   ),
-        pw.Text(" $personal ",style: pw.TextStyle(  fontSize: 20)   ),
-        pw.SizedBox(height: 10),
-        pw.Text(" Contact ",style: pw.TextStyle(  fontWeight: pw.FontWeight.bold,fontSize: 20)   ),
-        pw.Text(" $email ",style: pw.TextStyle( fontSize: 20)   ),
-        pw.Text(" $phone ",style: pw.TextStyle(  fontSize: 20)   ),
-        pw.Text(" $address ",style: pw.TextStyle(  fontSize: 20)   ),
-        pw.SizedBox(height: 10),
-        pw.Text(" Skills ",style: pw.TextStyle(  fontWeight: pw.FontWeight.bold,fontSize: 20)   ),
+        pw.SizedBox(height: 15),
+        pw.Text("   imformation ",style: pw.TextStyle(  fontWeight: pw.FontWeight.bold,fontSize: 20)   ),
+        pw.Text("     $name ",style: pw.TextStyle( fontSize: 20)   ),
+        pw.Text("     $birthday ",style: pw.TextStyle(  fontSize: 20)   ),
+        pw.SizedBox(height: 15),
+        pw.Text("   Contact ",style: pw.TextStyle(  fontWeight: pw.FontWeight.bold,fontSize: 20)   ),
+        pw.Text("    $email ",style: pw.TextStyle( fontSize: 20)   ),
+        pw.Text("    $phone ",style: pw.TextStyle(  fontSize: 20)   ),
+        pw.Text("    $address ",style: pw.TextStyle(  fontSize: 20)   ),
+        pw.SizedBox(height: 15),
+        pw.Text("   Skills ",style: pw.TextStyle(  fontWeight: pw.FontWeight.bold,fontSize: 20)   ),
         pw.Column(
           children:
             [
@@ -85,19 +90,39 @@ final image = pw.MemoryImage(
 
             ]
         ),
-        pw.Column(
-            children: [
-              pw.Text('About me ',style: pw.TextStyle(fontSize: 25,fontWeight: pw.FontWeight.bold,)),
-            ]
-        ),
-
       ]
     ),
-
-
 ),
 
-]
+           pw.Column(
+             crossAxisAlignment: pw.CrossAxisAlignment.start,
+               children: [
+                 pw.SizedBox(height: 50),
+                 pw.Text('About me ',style: pw.TextStyle(fontSize: 25,fontWeight: pw.FontWeight.bold,)),
+                 pw.Text("    $personal ",style: pw.TextStyle( fontSize: 20)   ),
+                 pw.SizedBox(height: 15),
+                 pw.Text(' Education',style: pw.TextStyle(fontSize: 25,fontWeight: pw.FontWeight.bold,)),
+                 pw.Text("    $Institude ",style: pw.TextStyle( fontSize: 20)   ),
+                 pw.Text("    $Start_Year ",style: pw.TextStyle( fontSize: 20)   ),
+                 pw.Text("    $End_Year ",style: pw.TextStyle( fontSize: 20)   ),
+                 pw.Text("    $Digree_Year ",style: pw.TextStyle( fontSize: 20)   ),
+                 pw.SizedBox(height: 15),
+                 pw.Text(' Experience',style: pw.TextStyle(fontSize: 25,fontWeight: pw.FontWeight.bold,)),
+                 pw.Text("    $Company ",style: pw.TextStyle( fontSize: 20)   ),
+                 pw.Text("    $Position ",style: pw.TextStyle( fontSize: 20)   ),
+                 pw.Text("    $Starting ",style: pw.TextStyle( fontSize: 20)   ),
+                 pw.Text("    $Ending ",style: pw.TextStyle( fontSize: 20)   ),
+                 pw.SizedBox(height: 15),
+                 pw.Text(' Hobbies',style: pw.TextStyle(fontSize: 25,fontWeight: pw.FontWeight.bold,)),
+                 pw.Text("    $hobbie ",style: pw.TextStyle( fontSize: 20)   ),
+                 pw.SizedBox(height: 15),
+                 pw.Text(' Languages',style: pw.TextStyle(fontSize: 25,fontWeight: pw.FontWeight.bold,)),
+                 pw.Text("    $language ",style: pw.TextStyle( fontSize: 20)   ),
+               ]
+           )
+
+],
+
        ),
      )
  );

@@ -164,9 +164,9 @@ class _EducationState extends State<Education> {
                             onTap: () {
                               Navigator.pushNamed(context, '/experience');
                               Institude = txtInstitude.text;
-                              Institude = txtStart_Year.text;
-                              Institude = txtEnd_Year.text;
-                              Institude = txtDigree_Year.text;
+                              Start_Year = txtStart_Year.text;
+                              End_Year = txtEnd_Year.text;
+                              Digree_Year = txtDigree_Year.text;
                             },
                             child: Center(
                                 child: Text(
